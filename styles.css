@@ -1,0 +1,300 @@
+@keyframes slideshow {
+    0% { background-image: url('https://s2-epocanegocios.glbimg.com/tKOwDnh9A8AmXexAM-_32uExZQA=/0x0:2309x1299/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e536e40f1baf4c1a8bf1ed12d20577fd/internal_photos/bs/2023/X/t/dybKYBTEeI239E7s6yMA/gettyimages-1472123000.jpg'); }
+    33% { background-image: url('https://dm0fehhuxv6f6.cloudfront.net/wp-content/uploads/2024/02/13115120/conselho-de-seguranca-da-onu-fara-reuniao-inedita-sobre-riscos-da-inteligencia-artificial-ia-.png'); }
+    66% { background-image: url('https://x2inteligencia.digital/wp-content/uploads/2020/02/AI-Imagem-Blog-1200x685-1.png'); }
+    100% { background-image: url('https://files.tecnoblog.net/wp-content/uploads/2023/06/ia-4-1060x596.png'); }
+}
+
+body {
+    animation: slideshow 20s infinite; /* Duração de 15 segundos, loop infinito */
+    background-size: cover; /* A imagem cobre toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* Evita barra de rolagem */
+}
+
+
+
+/* Reset básico para remover espaçamentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+html, body {
+    height: 100vh; /* Faz a altura ocupar toda a tela */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    justify-content: flex-start; /* Garante que o conteúdo vá para o topo */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+/* Centralizar o conteúdo no centro da tela, mantendo o rodapé no fundo */
+.container {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(156, 37, 37, 0.1);
+    max-width: 800px;  /* Limita a largura máxima do conteúdo */
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex-grow: 1; /* Garante que o conteúdo ocupe o espaço restante */
+    margin: 0 auto;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #0026ff;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.5rem; /* Fonte reduzida */
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+/* Estilo do menu de navegação */
+nav ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0026ff;
+    color: white;
+}
+
+/* Estilo da seção principal */
+main {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+h2 {
+    color: #0026ff;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+/* Efeito de transformação para a imagem */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+img:hover {
+    transform: scale(1.1); /* Aumenta a imagem 10% quando o mouse passa sobre ela */
+}
+
+/* Botão de interatividade */
+button {
+    background-color: #0026ff;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0026ff;
+    transform: scale(1.05);
+}
+
+/* Estilo do formulário */
+form {
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+form button {
+    background-color: #0026ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Efeito para exibir mensagem após o envio do formulário */
+footer {
+    background-color: #0026ff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+    width: 42%; /* Define a largura */
+    margin: 0 auto; /* Centraliza o footer na página */
+    border-radius: 8px; /* Bordas arredondadas para estética */
+    font-size: 0.8rem; /* Tamanho da fonte */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+}
+
+footer ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove espaçamento interno */
+    margin: 10px 0; /* Espaçamento entre itens */
+    display: flex; /* Exibe os itens lado a lado */
+    justify-content: center; /* Centraliza os links */
+    gap: 20px; /* Espaçamento entre os links */
+}
+
+footer ul li a {
+    color: #fff; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 0.9rem; /* Reduz o tamanho da fonte */
+    transition: color 0.3s; /* Efeito de transição */
+}
+
+footer ul li a:hover {
+    color: #ffcc00; /* Cor ao passar o mouse */
+}
+
+footer p {
+    margin: 5px 0; /* Margem pequena */
+    font-size: 0.7rem; /* Fonte menor */
+    color: #ccc; /* Texto em tom mais claro */
+}
+
+
+footer p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #bbb;
+}
+
+/* Estilo para a imagem */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+img:hover {
+    transform: scale(1.1); /* Aumenta a imagem 10% quando o mouse passa sobre ela */
+}
+
+/* Estilos para o lightbox */
+.lightbox {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Fica acima de todo o conteúdo */
+}
+
+#lightboxImage {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#closeLightbox {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#taskList li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #f0f4f8;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.deleteButton, .editButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.deleteButton:hover, .editButton:hover {
+    background-color: #d32f2f;
+}
+
+/* Edit button style */
+.editButton {
+    background-color: #0026ff;
+}
+
+.editButton:hover {
+    background-color: #0026ff;
+}

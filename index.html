@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Projeto Faetec</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="https://www.faetec.rj.gov.br/"><i class="fas fa-home"></i> Faetec</a></li>
+                
+            </ul>
+        </nav>
+        
+        <main>
+            <section id="introducao">
+                <h2>Bem-vindo ao projeto!</h2>
+                <p>Este é um projeto de lista de tarefas para ajudar você a organizar suas atividades.</p>
+                
+                <!-- Imagem que pode ser clicada para abrir em lightbox -->
+                <img src="https://profuturo.education/wp-content/uploads/2024/09/240927_PF-observatorio-IA-web-1.jpg" 
+                    alt="Imagem ilustrativa" id="mainImage">
+            </section>
+            <br>
+            <section id="interatividade">
+                <h3>Interatividade</h3>
+                <button id="alertButton">Clique aqui para uma surpresa</button>
+            
+                <!-- Formulário de adicionar tarefa -->
+                <form id="taskForm">
+                    <label for="task">Digite uma tarefa:</label>
+                    <input type="text" id="task" name="task" required>
+                    <button type="submit">Adicionar Tarefa</button>
+                </form>
+            
+                <ul id="taskList"></ul>
+            </section>
+            
+            
+        </main>
+    </div>
+    
+    <!-- Lightbox para exibir a imagem ampliada -->
+    <div id="lightbox" class="lightbox">
+        <span id="closeLightbox" class="close">&times;</span>
+        <img id="lightboxImage" src="" alt="Imagem ampliada">
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <ul>
+            <li><a href="https://www.instagram.com/redefaetec/" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+            <li><a href="https://x.com/redefaetec" target="_blank">
+                <i class="fab fa-twitter"></i> X</a>
+            </li>
+            <li><a href="https://www.youtube.com/@RedeFaetec/videos" target="_blank">
+                <i class="fab fa-youtube"></i> Youtube</a>
+            </li>
+        </ul>
+        <p>&copy; 2024 Lista de Tarefas. Todos os direitos reservados.</p>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
